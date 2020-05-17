@@ -1,16 +1,47 @@
 <?php
-
+/**
+* Работа с заказами
+*
+* Класс для работы с заказами
+*
+* @author Alex Flitcher <alexflitcher@riseup.net>
+* @version v0.1
+* @category core
+* @license https://www.gnu.org/licenses/gpl-3.0.ru.html
+*
+* @package DeliveryService
+* @subpackage DeliveryService\Restaraunt
+*/
 namespace DeliveryService;
 
 class Purchase
 {
+  /**
+  * @var object
+  */
   private $pdo;
 
+  /**
+  * @method null
+  * @param PDO $pdo <класс PDO>
+  */
   public function __construct($pdo)
   {
     $this->pdo = $pdo;
   }
 
+  /**
+  * @method integer|bool add($name, $family, $address, $pos_menu, $type_pay, $type_delivery, $phone, $message, $totalprice) <добавляет запись>
+  * @param string $name <имя заказчика>
+  * @param string $family <фамилия заказчика>
+  * @param string $address <адрес заказчика>
+  * @param string $pos_menu <позиции меню>
+  * @param string $type_pay <тип оплаты>
+  * @param string $type_delivery <тип доставки>
+  * @param string $phone <телефон заказчика>
+  * @param string $message <сообщение>
+  * @param string $totalprice <общая цена>
+  */
   public function add($name, $family, $address, $pos_menu,
                       $type_pay, $type_delivery, $phone,
                       $message, $totalprice)
@@ -37,6 +68,10 @@ class Purchase
     }
   }
 
+  /**
+  * @method array|bool get($id) <выдаёт запись>
+  * @param integer $id <id заказа>
+  */
   public function get($id)
   {
     try {
@@ -49,6 +84,9 @@ class Purchase
     }
   }
 
+  /**
+  * @method array|bool getAll() <выдаёт все записи>
+  */
   public function getAll()
   {
     try {
@@ -61,6 +99,19 @@ class Purchase
     }
   }
 
+  /**
+  * @method integer|bool add($id, $name, $family, $address, $pos_menu, $type_pay, $type_delivery, $phone, $message, $totalprice) <редактирует запись>
+  * @param integer $id <id заказчика>
+  * @param string $name <имя заказчика>
+  * @param string $family <фамилия заказчика>
+  * @param string $address <адрес заказчика>
+  * @param string $pos_menu <позиции меню>
+  * @param string $type_pay <тип оплаты>
+  * @param string $type_delivery <тип доставки>
+  * @param string $phone <телефон заказчика>
+  * @param string $message <сообщение>
+  * @param string $totalprice <общая цена>
+  */
   public function set($id, $name, $family,
                       $address, $pos_menu,
                       $type_pay, $type_delivery,
@@ -88,6 +139,10 @@ class Purchase
     }
   }
 
+  /**
+  * @method array|bool delete($id) <удаляет запись>
+  * @param integer $id <id заказа>
+  */
   public function delete($id)
   {
     try {
