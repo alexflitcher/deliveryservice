@@ -1,6 +1,6 @@
 <?php
 
-namespace DeliveryService;
+namespace DeliveryService\Core;
 
 class Menu
 {

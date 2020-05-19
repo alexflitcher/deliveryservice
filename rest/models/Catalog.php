@@ -10,10 +10,10 @@
 * @license https://www.gnu.org/licenses/gpl-3.0.ru.html
 *
 * @package DeliveryService
-* @subpackage DeliveryService\Catalog
+* @subpackage DeliveryService\Core\Catalog
 */
 
-namespace DeliveryService;
+namespace DeliveryService\Core;
 
 class Catalog
 {

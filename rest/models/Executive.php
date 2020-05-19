@@ -10,11 +10,11 @@
 * @license https://www.gnu.org/licenses/gpl-3.0.ru.html
 *
 * @package DeliveryService
-* @subpackage DeliveryService\Executive
+* @subpackage DeliveryService\Core\Executive
 */
 
 
-namespace DeliveryService;
+namespace DeliveryService\Core;
 
 class Executive
 {
