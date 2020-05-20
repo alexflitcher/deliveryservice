@@ -37,9 +37,10 @@ class Restaraunt
   * @param string $director <директор ресторана>
   * @param string $address <адрес ресторан>
   * @param string $phone <телефон ресторана>
+  * @param string $img <путь к картинке>
   */
   public function add($name, $director,
-                      $address, $phone)
+                      $address, $phone, $img)
   {
     try {
       $query = "INSERT INTO restaraunts VALUES(
@@ -47,13 +48,15 @@ class Restaraunt
         :name,
         :director,
         :address,
-        :phone
+        :phone,
+        :img
       )";
       $fix = $this->pdo->prepare($query);
       $res = $fix->execute(['name'     => $name,
                             'director' => $director,
                             'address'  => $address,
-                            'phone'    => $phone]);
+                            'phone'    => $phone,
+                            'img'      => $img]);
       if ($res) return $this->pdo->lastInsertId();
       else return false;
     } catch (PDOExeption $e) {
@@ -100,19 +103,23 @@ class Restaraunt
   * @param string $director <директор ресторана>
   * @param string $address <адрес ресторан>
   * @param string $phone <телефон ресторана>
+  * @param string $img <путь к картинке>
   */
   public function set($id, $name, $director,
-                      $address, $phone)
+                      $address, $phone, $img)
   {
     try {
       $query = "UPDATE restaraunts
                 SET name=:name, director=:director,
-                    address=:address, phone=:phone";
+                    address=:address, phone=:phone,
+                    img=:img WHERE id=:id";
       $fix = $this->pdo->prepare($query);
-      $res = $fix->execute(['name' => $name,
+      $res = $fix->execute(['id' => $id,
+                            'name' => $name,
                             'director' => $director,
                             'address' => $address,
-                            'phone' => $phone]);
+                            'phone' => $phone,
+                            'img' => $img]);
       if ($res) return true;
       else return false;
     } catch (PDOExeption $e) {

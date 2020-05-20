@@ -26,7 +26,7 @@ CREATE TABLE `catalogs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(80) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,6 +35,7 @@ CREATE TABLE `catalogs` (
 
 LOCK TABLES `catalogs` WRITE;
 /*!40000 ALTER TABLE `catalogs` DISABLE KEYS */;
+INSERT INTO `catalogs` VALUES (20,'Test'),(21,'Test'),(22,'Test'),(23,'Test'),(24,'Test'),(25,'Test'),(26,'Test'),(27,'Test'),(28,'Test'),(29,'Tesgst'),(30,'Tesgst');
 /*!40000 ALTER TABLE `catalogs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -165,8 +166,9 @@ CREATE TABLE `restaraunts` (
   `director` varchar(255) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `phone` varchar(33) DEFAULT NULL,
+  `img` varchar(1024) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=140 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -175,6 +177,7 @@ CREATE TABLE `restaraunts` (
 
 LOCK TABLES `restaraunts` WRITE;
 /*!40000 ALTER TABLE `restaraunts` DISABLE KEYS */;
+INSERT INTO `restaraunts` VALUES (91,'Tosiba','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(92,'Tosiba','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(93,'Tosiba','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(94,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(95,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(96,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(97,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(98,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(99,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(100,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(101,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(102,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(103,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(104,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(105,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(106,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(107,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(108,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(109,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(110,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(111,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(112,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(113,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(114,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(115,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(116,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(117,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(118,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(119,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(120,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(121,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(122,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(123,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(124,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(125,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(126,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(127,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(128,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(129,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(130,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(131,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(132,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(133,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(134,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(135,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(136,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(137,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(138,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(139,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg');
 /*!40000 ALTER TABLE `restaraunts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -187,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-18  0:15:52
+-- Dump completed on 2020-05-20  3:46:44

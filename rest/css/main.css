@@ -1,0 +1,104 @@
+.page {
+  width: 100%;
+}
+
+.header {
+  width: 97%;
+  background: yellow;
+  border-radius: 15px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.logo {
+  font-size: 8em;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  margin: auto;
+}
+
+.restaraunt {
+  width: 22%;
+  text-align: left;
+  font-family: Arial;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 100%;
+  background: yellow;
+  float: left;
+}
+
+.button_r {
+  text-decoration: none;
+  text-align: center;
+  margin-top: 50px;
+  float: none;
+  border-radius: 15px;
+  background: orange;
+  padding: 10px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+
+.button_r:hover {
+
+  color: white;
+  background: #9e2aa8;
+}
+
+.content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+.image {
+  margin-left: 0 auto;
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+
+.menu {
+  font-family: Arial;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 5px;
+  width: 97%;
+  background: yellow;
+}
+
+.search {
+  width: 40px;
+  margin-left: 15px;
+  
+}
+
+.i_search {
+  width: 90%;
+  padding: 15px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9em;
+  border-radius: 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.i_search:focus {
+  border: 3px solid #555;
+}
