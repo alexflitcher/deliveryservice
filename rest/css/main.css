@@ -22,7 +22,6 @@
 .restaraunt {
   width: 22%;
   text-align: left;
-  font-family: Arial;
   padding: 10px;
   border-radius: 15px;
   margin-left: 5px;
@@ -30,9 +29,11 @@
   height: 100%;
   background: yellow;
   float: left;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .button_r {
+  font-family: 'PT Sans', sans-serif;
   text-decoration: none;
   text-align: center;
   margin-top: 50px;
@@ -46,7 +47,7 @@
   cursor: pointer;
   transition-property: all;
   transition-timing-function: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .button_r:hover {
@@ -82,7 +83,7 @@
 .search {
   width: 40px;
   margin-left: 15px;
-  
+
 }
 
 .i_search {
