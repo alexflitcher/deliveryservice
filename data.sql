@@ -1,8 +1,8 @@
--- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for Win64 (AMD64)
 --
 -- Host: localhost    Database: data
 -- ------------------------------------------------------
--- Server version	10.3.22-MariaDB-1ubuntu1
+-- Server version	10.3.22-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -109,8 +109,9 @@ CREATE TABLE `menu` (
   `rest_id` int(11) NOT NULL DEFAULT 1,
   `catalog_id` int(11) NOT NULL DEFAULT 1,
   `description` text NOT NULL,
+  `img` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=123 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +120,36 @@ CREATE TABLE `menu` (
 
 LOCK TABLES `menu` WRITE;
 /*!40000 ALTER TABLE `menu` DISABLE KEYS */;
+INSERT INTO `menu` VALUES (41,'123','123',123,123,'123',NULL),(42,'123','123',123,123,'123',NULL),(43,'123','123',123,123,'123',NULL),(44,'123','123',123,123,'123',NULL),(45,'123','123',123,123,'123',NULL),(46,'123','123',123,123,'123',NULL),(47,'123','123',123,123,'123',NULL),(48,'123','123',123,123,'123',NULL),(49,'123','123',123,123,'123',NULL),(50,'123','123',123,123,'123',NULL),(51,'123','123',123,123,'123',NULL),(52,'123','123',123,123,'123',NULL),(53,'123','123',123,123,'123',NULL),(54,'123','123',93,123,'123',NULL),(55,'123','123',93,123,'123',NULL),(56,'123','123',93,123,'123',NULL),(57,'123','123',93,123,'123',NULL),(58,'123','123',93,123,'123',NULL),(59,'123','123',93,123,'123',NULL),(60,'123','123',93,123,'123',NULL),(61,'123','123',93,123,'123',NULL),(62,'123','123',93,123,'123',NULL),(63,'123','123',93,123,'123','../img/img.jpg'),(64,'123','123',93,123,'123','../img/img.jpg'),(65,'123','123',93,123,'123','../img/img.jpg'),(66,'123','123',93,123,'123','../img/img.jpg'),(67,'123','123',93,123,'123','../img/img.jpg'),(68,'123','123',93,123,'123','../img/img.jpg'),(69,'123','123',93,123,'123','../img/img.jpg'),(70,'123','123',93,123,'123','../img/img.jpg'),(71,'123','123',93,123,'123','../img/img.jpg'),(72,'123','123',93,123,'123','../img/img.jpg'),(73,'123','123',93,123,'123','../img/img.jpg'),(74,'123','123',93,123,'123','../img/img.jpg'),(75,'123','123',93,123,'123','../img/img.jpg'),(76,'123','123',93,123,'123','../img/img.jpg'),(77,'123','123',93,20,'123','../img/image.jpeg'),(78,'123','123',93,20,'123','../img/image.jpeg'),(79,'123','123',93,20,'123','../img/image.jpeg'),(80,'123','123',93,20,'123','../img/images.jpeg'),(81,'123','123',93,20,'123','../img/images.jpeg'),(82,'123','123',93,20,'123','../img/images.jpeg'),(83,'123','123',93,20,'123','../img/images.jpeg'),(84,'123','123',93,20,'123','../img/images.jpeg'),(85,'123','123',93,20,'123','../img/images.jpeg'),(86,'123','123',93,20,'123','../img/images.jpeg'),(87,'123','123',93,20,'123','../img/images.jpeg'),(88,'123','123',93,20,'123','../img/images.jpeg'),(89,'123','123',93,20,'123','../img/images.jpeg'),(90,'123','123',93,20,'123','../img/images.jpeg'),(91,'123','123',93,20,'123','../img/images.jpeg'),(92,'123','123',93,20,'123','../img/images.jpeg'),(93,'123','123',93,20,'123','../img/images.jpeg'),(94,'123','123',93,20,'HEHE','../img/images.jpeg'),(95,'123','123',93,20,'HEHE','../img/images.jpeg'),(96,'123','123',93,20,'HEHE','../img/images.jpeg'),(97,'123','123',93,20,'HEHE','../img/images.jpeg'),(98,'123','123',93,20,'HEHE','../img/images.jpeg'),(99,'1123122312312323','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(100,'1123122312312323','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(101,'1123122312312323','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(102,'1.1231223123122E+39','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(103,'1.1231223123122E+39','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(104,'Курочка с инлейкой вкусннааа','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(105,'Курочка с инлейкой вкусннааа','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(106,'Курочка с инлейкой вкусннааа','1231231231231231231',93,20,'HEHE','../img/images.jpeg'),(107,'Курочка с инлейкой вкусннааа','1231231231231231231',93,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(108,'Курочка с инлейкой вкусннааа','1231231231231231231',93,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(109,'Курочка с инлейкой вкусннааа','1231231231231231231',93,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(110,'Курочка с инлейкой вкусннааа','1231231231231231231',93,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(111,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(112,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(113,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(114,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(115,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(116,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(117,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(118,'Курочка с инлейкой вкусннааа','1231231231231231231',91,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(119,'Курочка с инлейкой вкусннааа','1231231231231231231',128,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(120,'Курочка с инлейкой вкусннааа','1231231231231231231',128,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(121,'Курочка с инлейкой вкусннааа','1231231231231231231',128,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg'),(122,'Курочка с инлейкой вкусннааа','1231231231231231231',128,20,'HEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHE','../img/images.jpeg');
 /*!40000 ALTER TABLE `menu` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `promocodes`
+--
+
+DROP TABLE IF EXISTS `promocodes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `promocodes` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `dateadd` date NOT NULL,
+  `datedelete` datetime NOT NULL,
+  `adder` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`,`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `promocodes`
+--
+
+LOCK TABLES `promocodes` WRITE;
+/*!40000 ALTER TABLE `promocodes` DISABLE KEYS */;
+INSERT INTO `promocodes` VALUES (2,'#QWERTY','2016-12-12','2018-12-12 00:00:00','nicolas','food'),(3,'#QWERTY','2016-12-12','2018-12-12 00:00:00','nicolas','food'),(4,'#QWERTY','2016-12-12','2018-12-12 00:00:00','nicolas','food'),(5,'#QWERTY','2016-12-12','2018-12-12 00:00:00','nicolas','food'),(6,'#QWERTY','2016-12-12','2018-12-12 00:00:00','nicolas','food');
+/*!40000 ALTER TABLE `promocodes` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -190,4 +220,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-20  3:46:44
+-- Dump completed on 2020-05-25 14:56:17

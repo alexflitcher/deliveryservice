@@ -1,7 +1,9 @@
 $(document).ready(function() {
-  $('.button_r').on("click", function () {
-    let id = this.id;
-    let link = "/view/menu.php?id=" + id;
-    window.location = link;
-  })
+  setInterval(function() {
+    $('.button_r').on("click", function () {
+      let id = this.id;
+      let link = "menu.php?id=" + id;
+      window.location = link;
+    })
+  }, 1000)
 });

@@ -1,0 +1,65 @@
+.menulist {
+  width: 22%;
+  text-align: left;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 100%;
+  background: yellow;
+  float: left;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.namemenu {
+  overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+  text-align: left;
+  font-size: 1.5em;
+
+}
+
+.pricemenu {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1em;
+  margin-top: -15px;
+
+}
+
+.catmenu {
+    margin-top: -15px;
+}
+
+.descmenu {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: gray;
+}
+
+.button_m {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+
+  float: none;
+  border-radius: 15px;
+  background: orange;
+  padding: 10px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+.button_m:hover {
+
+  color: white;
+  background: #9e2aa8;
+}

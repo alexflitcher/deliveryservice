@@ -97,6 +97,39 @@ class Restaraunt
   }
 
   /**
+  * @method array|bool getLimit($min, $max) <получает ограниченное кол-во записей>
+  * @param integer $min <откуда вывести>
+  * @param integer $max <сколько вывести>
+  */
+  public function getLimit($min, $max) {
+    try {
+      $query = "SELECT * FROM restaraunts LIMIT $min, $max";
+      $res = $this->pdo->query($query);
+      if ($res) return $res->fetchAll();
+      else return false;
+    } catch (PDOExeption $e) {
+      die("Произошла ошибка" . $e->getMessage());
+    }
+  }
+
+
+  /**
+  * @method array|bool searchName($name) <поиск по имени>
+  * @param string $name <имя ресторана>
+  */
+  public function searchName($name)
+  {
+    try {
+      $query = "SELECT * FROM restaraunts WHERE name LIKE '%$name%'";
+      $res = $this->pdo->query($query);
+      if ($res) return $res->fetchAll();
+      else return false;
+    } catch (PDOExeption $e) {
+      die("Произошла ошибка" . $e->getMessage());
+    }
+  }
+
+  /**
   * @method integer|bool set($id, $name, $director, $address, $phone) <редактирует запись>
   * @param integer $id <id ресторана>
   * @param string $name <имя ресторана>

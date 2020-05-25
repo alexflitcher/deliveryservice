@@ -103,3 +103,29 @@
 .i_search:focus {
   border: 3px solid #555;
 }
+
+.loadmore {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5%;
+  float: left;
+  width: 97%;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  background: orange;
+  padding: 20px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+.loadmore:hover {
+
+  color: white;
+  background: #9e2aa8;
+}
