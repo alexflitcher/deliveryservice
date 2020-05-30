@@ -1,8 +1,8 @@
--- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for Win64 (AMD64)
+-- MySQL dump 10.17  Distrib 10.3.22-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: data
 -- ------------------------------------------------------
--- Server version	10.3.22-MariaDB
+-- Server version	10.3.22-MariaDB-1ubuntu1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -53,8 +53,9 @@ CREATE TABLE `clients` (
   `email` tinytext DEFAULT NULL,
   `phone` varchar(50) DEFAULT NULL,
   `birthday` date DEFAULT NULL,
+  `verification` enum('false','true') NOT NULL DEFAULT 'false',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,6 +64,7 @@ CREATE TABLE `clients` (
 
 LOCK TABLES `clients` WRITE;
 /*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+INSERT INTO `clients` VALUES (11,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(12,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(13,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(14,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(15,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(16,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(17,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(18,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(19,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(20,'1231','3123123','alexflitcher@yandex.ru','89277640847','2020-05-12','false'),(21,'dfgd','dfgdfg','123@yandex.ru123','123123123123123123','2020-04-29','false');
 /*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -210,6 +212,31 @@ LOCK TABLES `restaraunts` WRITE;
 INSERT INTO `restaraunts` VALUES (91,'Tosiba','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(92,'Tosiba','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(93,'Tosiba','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(94,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(95,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(96,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(97,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(98,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(99,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(100,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(101,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(102,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(103,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(104,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(105,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(106,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(107,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(108,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(109,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(110,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(111,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(112,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(113,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(114,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(115,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(116,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(117,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(118,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/logo.jpeg'),(119,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(120,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(121,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(122,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(123,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(124,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(125,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(126,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(127,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(128,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(129,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(130,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/img.jpg'),(131,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(132,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(133,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(134,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(135,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(136,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(137,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(138,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg'),(139,'Tosiba1','A. A. Flitcher','Bt. street, h. 12, c. 175','216-542-451','../img/images.jpeg');
 /*!40000 ALTER TABLE `restaraunts` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `verifications`
+--
+
+DROP TABLE IF EXISTS `verifications`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `verifications` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_user` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`,`id_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `verifications`
+--
+
+LOCK TABLES `verifications` WRITE;
+/*!40000 ALTER TABLE `verifications` DISABLE KEYS */;
+INSERT INTO `verifications` VALUES (1,1,'sgfdgrgh'),(2,3,'5423dfg34576hgfh'),(3,1,'sgfdgrgh'),(4,1,'sgfdgrgh'),(5,1,'sgfdgrgh'),(6,1,'sgfdgrgh'),(7,1,'sgfdgrgh'),(8,1,'sgfdgrgh');
+/*!40000 ALTER TABLE `verifications` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -220,4 +247,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-25 14:56:17
+-- Dump completed on 2020-05-30  4:52:24
