@@ -40,12 +40,12 @@ class Client
   * @param string $birthday <день рождения клиента>
   */
   public function add($name, $family, $email,
-                      $phone, $birthday)
+                      $phone, $birthday, $verification)
   {
       try {
         $query = "INSERT INTO clients VALUES(
           NULL, :name, :family, :email, :phone,
-          :birthday
+          :birthday, :verification
         )";
 
         $load = $this->pdo->prepare($query);
@@ -53,7 +53,8 @@ class Client
                              'family' => $family,
                              'email'  => $email,
                              'phone'  => $phone,
-                             'birthday'=> $birthday]);
+                             'birthday'=> $birthday,
+                             'verification' => $verification]);
 
        if ($res) return $this->pdo->lastInsertId();
        else return false;
@@ -97,6 +98,30 @@ class Client
     }
   }
 
+  public function getByEmail($email) {
+    try {
+      $query = "SELECT * FROM clients WHERE email='$email'";
+      $res = $this->pdo->query($query);
+
+      if ($res) return $res->fetch();
+      else return false;
+    } catch (PDOException $e) {
+      die("Произошла ошибка: " . $e->getMessage());
+    }
+  }
+
+  public function getByPhone($phone) {
+    try {
+      $query = "SELECT * FROM clients WHERE phone='$phone'";
+      $res = $this->pdo->query($query);
+
+      if ($res) return $res->fetch();
+      else return false;
+    } catch (PDOException $e) {
+      die("Произошла ошибка: " . $e->getMessage());
+    }
+  }
+
   /**
   * @method bool set($id, $name, $family, $email, $phone, $birthday) <редактирует запись>
   * @param integer $id <id клиента>
@@ -107,7 +132,7 @@ class Client
   * @param string $birthday <день рождения клиента>
   */
   public function set($id, $name, $family,
-                      $email, $phone, $birthday)
+                      $email, $phone, $birthday, $verification)
   {
     try {
       $query = "UPDATE clients SET name=:name, family=:family,
@@ -120,7 +145,8 @@ class Client
                              'family'   => $family,
                              'email'    => $email,
                              'phone'    => $phone,
-                             'birthday' => $birthday]);
+                             'birthday' => $birthday,
+                             'verification' => $verification]);
      if ($res) return true;
      else return false;
     } catch (PDOExeption $e) {

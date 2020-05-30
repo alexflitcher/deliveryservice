@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico">
   </head>
   <body>
     <?php require_once '../components/view.header.php'; ?>
-
     <?php require_once '../components/components.search.php'; ?>
     <?php require_once '../components/view.menusearch.php'; ?>
     <?php require_once '../components/component.getrestaurants.php'; ?>
@@ -20,7 +20,7 @@
 
 
 
-    <script src="../js/componentjs.location.js" charset="utf-8"></script>
+      <script src="../js/componentjs.location.js" charset="utf-8"></script>
       <script src="../js/components.teenload.js" charset="utf-8"></script>
 
     </div>

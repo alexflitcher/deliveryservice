@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="../img/favicon.ico">
   </head>
   <body>
         <?php require_once '../components/view.header.php'; ?>
