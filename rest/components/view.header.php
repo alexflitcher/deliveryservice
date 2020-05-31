@@ -12,6 +12,7 @@
         echo "<b class='choose'><a href='singup.php'>Регистрация</a>
               |
               <a href='singin.php'>Вход</a></b>";
-      }
+        
+     }
     ?>
   </div>

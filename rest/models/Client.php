@@ -81,9 +81,9 @@ class Client
     }
   }
 
+
   /**
   * @method array|bool getAll() <получает все записи>
-  * @param integer $id <id клиента>
   */
   public function getAll()
   {
@@ -137,7 +137,8 @@ class Client
     try {
       $query = "UPDATE clients SET name=:name, family=:family,
                                    email=:email, phone=:phone,
-                                   birthday=:birthday
+                                   birthday=:birthday,
+                                   verification=:verification
                                    WHERE id=:id";
       $load = $this->pdo->prepare($query);
       $res = $load->execute(['id'       => $id,

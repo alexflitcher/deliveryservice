@@ -60,7 +60,22 @@ class Verification {
       $query = "SELECT * FROM verifications WHERE id=$id";
       $res = $this->pdo->query($query);
       if ($res) return $res->fetch();
-      else return $res;
+      else return false;
+    } catch (PDOExeption $e) {
+      die("Произошла ошибка" . $e->getMessage());
+    }
+  }
+
+  /**
+  * @method array|bool getByHash($hash) <выдаёт запись по хэшу>
+  * @param string $hash <хэш пользователя>
+  */
+  public function getByHash($hash) {
+    try {
+      $query = "SELECT * FROM verifications WHERE url='$hash'";
+      $res = $this->pdo->query($query);
+      if ($res) return $res->fetch();
+      else return false;
     } catch (PDOExeption $e) {
       die("Произошла ошибка" . $e->getMessage());
     }

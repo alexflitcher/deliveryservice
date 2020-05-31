@@ -18,7 +18,7 @@
         <?php require_once '../components/components.search.php'; ?>
         <?php require_once '../components/view.contentrestsearch.php'; ?>
 
-
+        <script src="../js/componentjs.location.js" charset="utf-8"></script>
   </body>
 
 </html>

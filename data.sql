@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: data
 -- ------------------------------------------------------
--- Server version	10.3.22-MariaDB-1ubuntu1
+-- Server version	10.3.22-MariaDB-1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -55,7 +55,7 @@ CREATE TABLE `clients` (
   `birthday` date DEFAULT NULL,
   `verification` enum('false','true') NOT NULL DEFAULT 'false',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `clients` (
 
 LOCK TABLES `clients` WRITE;
 /*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (11,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(12,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(13,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(14,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(15,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(16,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(17,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(18,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(19,'123','123','123@yandex.ru','123123123123','2020-05-14','false'),(20,'1231','3123123','alexflitcher@yandex.ru','89277640847','2020-05-12','false'),(21,'dfgd','dfgdfg','123@yandex.ru123','123123123123123123','2020-04-29','false');
+INSERT INTO `clients` VALUES (25,'123','123','alexflitcher@yandex.ru','123123123123123','2020-06-25','true');
 /*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -225,7 +225,7 @@ CREATE TABLE `verifications` (
   `id_user` int(11) NOT NULL,
   `url` varchar(255) NOT NULL,
   PRIMARY KEY (`id`,`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -234,7 +234,7 @@ CREATE TABLE `verifications` (
 
 LOCK TABLES `verifications` WRITE;
 /*!40000 ALTER TABLE `verifications` DISABLE KEYS */;
-INSERT INTO `verifications` VALUES (1,1,'sgfdgrgh'),(2,3,'5423dfg34576hgfh'),(3,1,'sgfdgrgh'),(4,1,'sgfdgrgh'),(5,1,'sgfdgrgh'),(6,1,'sgfdgrgh'),(7,1,'sgfdgrgh'),(8,1,'sgfdgrgh');
+INSERT INTO `verifications` VALUES (28,24,'7e0I7dnDC7JtzWCJTcrOVQiqbAi2cRmL');
 /*!40000 ALTER TABLE `verifications` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -247,4 +247,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-30  4:52:24
+-- Dump completed on 2020-06-01  0:31:34

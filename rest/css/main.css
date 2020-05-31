@@ -166,3 +166,9 @@
 .singup input[type="submit"] {
   cursor: pointer;
 }
+
+.novalid {
+  font-family: 'Jost', sans-serif;
+  font-size: 3em;
+  margin: 0 auto;
+}

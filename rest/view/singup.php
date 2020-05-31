@@ -15,7 +15,7 @@
     <?php require_once '../components/view.header.php'; ?>
     <?php require_once '../components/components.search.php'; ?>
     <?php require_once '../components/view.menusearch.php'; ?>
-
+    
   <div class="singup">
     <form class="singupform" method="post">
       <table>
