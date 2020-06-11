@@ -1,0 +1,60 @@
+.imageuserdata > img {
+  width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.imageuserdata input {
+  width: 95%;
+  padding: 10px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9em;
+  border-radius: 15px;
+  margin: 2px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.imageuserdata input:focus {
+  border: 3px solid #555;
+}
+
+.imageuserdata {
+  font-family: 'PT Sans', sans-serif;
+  width: 42%;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 15px;
+  background: yellow;
+  padding: 10px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.datauser {
+  font-family: Arial;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: 5px;
+  width: 42%;
+  background: yellow;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+}
+
+.purchasesusers {
+  font-family: Arial;
+  padding: 10px;
+  border-radius: 15px;
+  margin-top: -477px;
+  width: 53%;
+  background: yellow;
+  float: right;
+}

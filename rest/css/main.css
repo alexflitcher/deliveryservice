@@ -172,3 +172,35 @@
   font-size: 3em;
   margin: 0 auto;
 }
+
+.singin {
+      background: yellow;
+      padding: 30px;
+      border-radius: 15px;
+      width: 50%;
+      font-family: 'Jost', sans-serif;
+      margin: 0 auto;
+      margin-top: 50px;
+}
+
+.singin input {
+  width: 120%;
+  padding: 8px;
+  font-family: 'Jost', sans-serif;
+  font-size: 0.9em;
+  border-radius: 15px;
+  margin: 0px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.singin input:hover {
+  border: 3px solid #555;
+}
+
+.singin input[type="submit"] {
+  cursor: pointer;
+}

@@ -45,7 +45,7 @@ class Client
       try {
         $query = "INSERT INTO clients VALUES(
           NULL, :name, :family, :email, :phone,
-          :birthday, :verification
+          :birthday, :verification, 'false'
         )";
 
         $load = $this->pdo->prepare($query);
@@ -132,22 +132,23 @@ class Client
   * @param string $birthday <день рождения клиента>
   */
   public function set($id, $name, $family,
-                      $email, $phone, $birthday, $verification)
+                      $email, $phone, $birthday, $verification, $img)
   {
     try {
       $query = "UPDATE clients SET name=:name, family=:family,
                                    email=:email, phone=:phone,
                                    birthday=:birthday,
-                                   verification=:verification
+                                   verification=:verification, img=:img
                                    WHERE id=:id";
       $load = $this->pdo->prepare($query);
-      $res = $load->execute(['id'       => $id,
-                             'name'     => $name,
-                             'family'   => $family,
-                             'email'    => $email,
-                             'phone'    => $phone,
-                             'birthday' => $birthday,
-                             'verification' => $verification]);
+      $res = $load->execute(['id'           => $id,
+                             'name'         => $name,
+                             'family'       => $family,
+                             'email'        => $email,
+                             'phone'        => $phone,
+                             'birthday'     => $birthday,
+                             'verification' => $verification,
+                             'img'          => $img]);
      if ($res) return true;
      else return false;
     } catch (PDOExeption $e) {

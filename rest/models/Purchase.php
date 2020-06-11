@@ -44,13 +44,13 @@ class Purchase
   */
   public function add($name, $family, $address, $pos_menu,
                       $type_pay, $type_delivery, $phone,
-                      $message, $totalprice)
+                      $message, $totalprice, $id_user)
   {
     try {
       $query = "INSERT INTO purchases VALUES(
         NULL, :name, :family, :address, :pos_menu,
         :type_pay, :type_delivery, :phone, :message,
-        :totalprice
+        :totalprice, :id_user
       )";
       $fix = $this->pdo->prepare($query);
       $res = $fix->execute([
@@ -58,7 +58,8 @@ class Purchase
         'address' => $address, 'pos_menu' => $pos_menu,
         'type_pay' => $type_pay, 'type_delivery' => $type_delivery,
         'phone' => $phone, 'message' => $message,
-        'totalprice' => $totalprice
+        'totalprice' => $totalprice,
+        'id_user' => $id_user
       ]);
       if ($res) return $this->pdo->lastInsertId();
       else return false;
@@ -84,6 +85,16 @@ class Purchase
     }
   }
 
+  public function getByUserId($id) {
+    try {
+      $query = "SELECT * FROM purchases WHERE id_user=$id";
+      $res = $this->pdo->query($query);
+      if ($res) return $res->fetchAll();
+      else return false;
+    } catch (PDOExeption $pdo) {
+      die("Произошла ошибка: " . $e->getMessage());
+    }
+  }
   /**
   * @method array|bool getAll() <выдаёт все записи>
   */
@@ -116,21 +127,23 @@ class Purchase
                       $address, $pos_menu,
                       $type_pay, $type_delivery,
                       $phone,
-                      $message, $totalprice)
+                      $message, $totalprice, $id_user)
   {
     try {
       $query = "UPDATE purchases SET
       name=:name, family=:family, address=:address,
       pos_menu=:pos_menu, type_pay=:type_pay,
       type_delivery=:type_delivery, phone=:phone,
-      message=:message, totalprice=:totalprice WHERE id=:id";
+      message=:message, totalprice=:totalprice,
+      id_user=:id_user WHERE id=:id";
       $fix = $this->pdo->prepare($query);
       $res = $fix->execute([
         'name' => $name, 'family' => $family,
         'address' => $address, 'pos_menu' => $pos_menu,
         'type_pay' => $type_pay, 'type_delivery' => $type_delivery,
         'phone' => $phone, 'message' => $message,
-        'totalprice' => $totalprice, 'id' => $id
+        'totalprice' => $totalprice, 'id' => $id,
+        'id_user' => $id_user
       ]);
       if ($res) return true;
       else return false;
