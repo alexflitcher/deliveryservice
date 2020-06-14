@@ -11,7 +11,7 @@ $purchases = $purchase->getByUserId($clients[0]);
 ?>
 <div class="imageuserdata">
   <?php
-    if (!$clients[6]) $src = "../img/noimageuser.jpg";
+    if ($clients[6] == "false") $src = "../img/noimageuser.jpg";
     else $src = $clients[6];
   ?>
   <img src="<?=$src?>" alt="">
