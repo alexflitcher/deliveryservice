@@ -18,7 +18,7 @@ if (@$_GET['hash']) {
     $reform = $client->set($id_user, $data_user['name'],
                            $data_user['family'], $data_user['email'],
                            $data_user['phone'], $data_user['birthday'],
-                           'true', 'false');
+                           'true', '../img/noimageuser.jpg');
     if ($reform) {
         echo "<b class='novalid'>Ваш аккаунт подтверждён!<br>
               Теперь вы можете войти в аккаунт</b>";

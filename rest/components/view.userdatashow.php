@@ -8,13 +8,13 @@ $nameaar = ["ID", "Имя", "Фамилия", "Эл. почта", "Телефо�
 $purchase = new DeliveryService\Core\Purchase($pdo);
 $purchases = $purchase->getByUserId($clients[0]);
 
+require_once '../components/component.loadimg.php';
 ?>
 <div class="imageuserdata">
   <?php
-    if ($clients[6] == "false") $src = "../img/noimageuser.jpg";
-    else $src = $clients[6];
+    $src = $clients[6];
   ?>
-  <img src="<?=$src?>" alt="">
+  <img src="<?=$src?>" alt="Аватар">
   <form method="post" enctype="multipart/form-data">
     <input type="file" name="image" value="Загрузить фото"><br>
     <input type="submit" value="Загрузить">
