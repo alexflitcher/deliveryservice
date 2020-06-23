@@ -18,5 +18,14 @@
     <?php require_once '../components/view.menusearch.php'; ?>
     <?php require_once '../components/view.userdatashow.php'; ?>
   </div>
+  <div id="openModal" class="modalDialog">
+  	<div>
+  		<a href="#close" title="Закрыть" class="close">X</a>
+      <div class="modalWindowEdit">
+  	     <p>Пожалуйста, закройте окно.</p>
+      </div>
+    </div>
+  </div>
+  <script src="../js/component.changeaboutinfo.js" charset="utf-8"></script>
 </body>
 </html>

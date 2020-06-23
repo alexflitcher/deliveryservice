@@ -6,6 +6,9 @@ require_once '../connect.php';
 require_once '../vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+// create a log channel
 
 if (@$_POST['email'] && @$_POST['email'] != "") {
   $email  = htmlentities($_POST['email']);
@@ -24,6 +27,8 @@ if (@$_POST['email'] && @$_POST['email'] != "") {
           $hashcode = $code->generateCode(8),
           date('Y-m-d H-i-s', time()+172800))) {
                   $mail = new PHPMailer();
+                  $log = new Logger("$id_user:вход_отправка_кода");
+                  $log->pushHandler(new StreamHandler("../logs/$id_user.log", Logger::NOTICE));
                   $msg = "ok";
                   $mail->isSMTP();
                   $mail->CharSet = "UTF-8";
@@ -48,6 +53,7 @@ if (@$_POST['email'] && @$_POST['email'] != "") {
 
                     if ($mail->send()) {
                       echo "На вашу почту был отправлен\nкод подтрерждения, введите\nего в появившееся поле,\nесли код не пришёл проверьте\nпапку \"Спам\"";
+                      @$log->notice("отправлено сообщение с кодом подтверждения - $hashcode");
                     }
      }
     } else {
