@@ -1,0 +1,50 @@
+.describemenupos {
+  background-color: yellow;
+  padding: 15px;
+  margin-top: 5px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.dmp-img {
+  text-align: center;
+}
+
+.dmp-img-img {
+  border-radius: 15px;
+}
+
+.dmp-div {
+  background: gray;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.dmp-purchase {
+  padding: 20px;
+}
+
+.button_m_r {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  width: 98%;
+  border-radius: 15px;
+  background: orange;
+  padding: 10px;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: .5s;
+}
+
+.button_m_r:hover {
+
+  color: white;
+  background: #9e2aa8;
+}

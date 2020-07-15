@@ -1,80 +1,57 @@
-.imageuserdata > img {
-  width: 350px;
-  height: 350px;
-  border-radius: 15px;
-  max-width: 100%;
+html, body {
+    word-wrap: break-word;
 }
 
-.imageuserdata input {
-  width: 95%;
-  padding: 10px;
-  font-family: 'Jost', sans-serif;
-  font-size: 0.9em;
-  border-radius: 15px;
-  margin: 2px 0;
-  box-sizing: border-box;
-  border: 3px solid #ccc;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-}
-
-.imageuserdata input:focus {
-  border: 3px solid #555;
-}
-
-.changeuserdata input {
-  width: 95%;
-  padding: 10px;
-  font-family: 'Jost', sans-serif;
-  font-size: 0.9em;
-  border-radius: 15px;
-  margin: 2px 0;
-  box-sizing: border-box;
-  border: 3px solid #ccc;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  outline: none;
-}
-
-.changeuserdata input:focus {
-  border: 3px solid #555;
-}
-
-.imageuserdata {
-  font-family: 'PT Sans', sans-serif;
-  width: 42%;
-  text-align: center;
+.yellow {
+  background-color: yellow;
   margin-top: 5px;
+  padding: 15px;
   border-radius: 15px;
-  background: yellow;
-  padding: 10px;
-  color: black;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-.datauser {
-  font-family: Arial;
-  padding: 10px;
-  border-radius: 15px;
+.textarea-resize {
+  resize: none;
+}
+
+.dorate {
+  background-color: yellow;
   margin-top: 5px;
-  width: 42%;
-  background: yellow;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  float: left;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Jost', sans-serif;
 }
 
-.purchasesusers {
-  font-family: Arial;
-  padding: 10px;
+.allrate {
+  background-color: yellow;
+  margin-top: 5px;
+  padding: 15px;
   border-radius: 15px;
-  margin-top: -477px;
-  width: 53%;
-  background: yellow;
-  float: right;
+  font-family: 'Jost', sans-serif;
+}
+
+.arate {
+  background-color: gray;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Jost', sans-serif;
+}
+
+.rate-img img {
+  width: 60px;
+  border-radius: 50px;
+}
+
+.rate-name {
+  margin-left: 20px;
+}
+
+.rate-reply:hover {
+  cursor: pointer;
+}
+
+.noresize-reply {
+  resize: none;
 }
 
 .modalDialog {
@@ -131,16 +108,28 @@
 
 .close:hover { background: #00d9ff; }
 
+.notresize {
+  resize: none;
+}
+
+.areply {
+  background-color: gray;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Jost', sans-serif;
+  margin-left: 50px;
+}
+
+.rate-edit:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .warning {
   color: red;
 }
 
 .good {
   color: green
-}
-
-.exit {
-  width: 53%;
-  float: right;
-  margin-top: -27%;
 }

@@ -39,6 +39,7 @@ if (@$_POST['code'] && @$_POST['mail']) {
             $_SESSION['phone'] = $data2['phone'];
             $_SESSION['birthday'] = $data2['birthday'];
             $_SESSION['img'] = $data2['img'];
+            $_SESSION['buy'] = [];
             echo "Вы успешно вошли в ваш аккаунт!";
             @$log->notice("пользователь вошёл в аккаунт");
             }

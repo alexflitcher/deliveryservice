@@ -54,7 +54,18 @@ require_once '../components/component.loadimg.php';
     ?>
   </table>
 </div>
+<div class="button_r exit">
+  Выйти
+</div>
 <script type="text/javascript">
+  $('.exit').click(function(e) {
+    $.ajax({
+      url: '../components/components.exit.php',
+    }).done(function(data) {
+      location.href = "../view/";
+    })
+  })
+
   let id = $('.metadata').attr('id');
 
   $.ajax({

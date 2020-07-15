@@ -44,13 +44,13 @@ class Purchase
   */
   public function add($name, $family, $address, $pos_menu,
                       $type_pay, $type_delivery, $phone,
-                      $message, $totalprice, $id_user)
+                      $message, $totalprice, $id_user, $date)
   {
     try {
       $query = "INSERT INTO purchases VALUES(
         NULL, :name, :family, :address, :pos_menu,
         :type_pay, :type_delivery, :phone, :message,
-        :totalprice, :id_user
+        :totalprice, :id_user, :date, 0
       )";
       $fix = $this->pdo->prepare($query);
       $res = $fix->execute([
@@ -59,7 +59,8 @@ class Purchase
         'type_pay' => $type_pay, 'type_delivery' => $type_delivery,
         'phone' => $phone, 'message' => $message,
         'totalprice' => $totalprice,
-        'id_user' => $id_user
+        'id_user' => $id_user,
+        'date' => $date
       ]);
       if ($res) return $this->pdo->lastInsertId();
       else return false;
@@ -127,7 +128,8 @@ class Purchase
                       $address, $pos_menu,
                       $type_pay, $type_delivery,
                       $phone,
-                      $message, $totalprice, $id_user)
+                      $message, $totalprice, $id_user,
+                      $date, $was_pay)
   {
     try {
       $query = "UPDATE purchases SET
@@ -135,7 +137,7 @@ class Purchase
       pos_menu=:pos_menu, type_pay=:type_pay,
       type_delivery=:type_delivery, phone=:phone,
       message=:message, totalprice=:totalprice,
-      id_user=:id_user WHERE id=:id";
+      id_user=:id_user, was_pay=:was_pay date=:date WHERE id=:id";
       $fix = $this->pdo->prepare($query);
       $res = $fix->execute([
         'name' => $name, 'family' => $family,
@@ -143,7 +145,9 @@ class Purchase
         'type_pay' => $type_pay, 'type_delivery' => $type_delivery,
         'phone' => $phone, 'message' => $message,
         'totalprice' => $totalprice, 'id' => $id,
-        'id_user' => $id_user
+        'id_user' => $id_user,
+        'date' => $date,
+        'was_pay' => $was_pay
       ]);
       if ($res) return true;
       else return false;

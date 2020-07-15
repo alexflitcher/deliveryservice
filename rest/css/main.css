@@ -32,6 +32,16 @@
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.choose-img {
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.buy-img {
+  width: 35px;
+}
+
 .button_r {
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
@@ -171,6 +181,7 @@
   font-family: 'Jost', sans-serif;
   font-size: 3em;
   margin: 0 auto;
+  color: red;
 }
 
 .singin {
@@ -203,4 +214,9 @@
 
 .singin input[type="submit"] {
   cursor: pointer;
+}
+
+.warning {
+  color: red;
+  font-family: 'Jost', sans-serif;
 }

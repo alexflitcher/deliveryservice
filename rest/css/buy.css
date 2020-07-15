@@ -1,0 +1,72 @@
+.menu-link img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.menu-delete img {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.menu-name {
+  margin-right: 10px;
+}
+
+.menu-img img {
+  width: 50px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.hiddenform {
+  background-color: yellow;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Jost', sans-serif;
+
+}
+
+.menu-cost {
+  margin-right: 10px;
+}
+
+.menupos {
+  background-color: yellow;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Jost', sans-serif;
+}
+
+.menu-menu {
+  background-color: gray;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+.totalprice {
+  background-color: yellow;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 15px;
+  font-family: 'Jost', sans-serif;
+}
+
+.pay {
+  margin-top: 5px;
+  padding: 20px;
+}
+
+.textarea-resize {
+  resize: none; 
+}
+
+.yellow {
+  background-color: yellow;
+  margin-top: 5px;
+  padding: 15px;
+  border-radius: 15px;
+}
