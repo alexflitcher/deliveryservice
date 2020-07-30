@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 15 2020 г., 20:21
+-- Время создания: Июл 30 2020 г., 19:16
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.3.17
 
@@ -20,6 +20,24 @@ SET time_zone = "+00:00";
 --
 -- База данных: `data`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `admins`
+--
+
+CREATE TABLE `admins` (
+  `username` varchar(255) NOT NULL,
+  `password` varchar(400) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `admins`
+--
+
+INSERT INTO `admins` (`username`, `password`) VALUES
+('admin', '$2y$10$FFmLwUl5HmVzxSOm7f8MfecnNxdPnVRd.HqmsqIjz3TKYjxA8ipgu');
 
 -- --------------------------------------------------------
 
@@ -521,6 +539,12 @@ INSERT INTO `verifications` (`id`, `id_user`, `url`) VALUES
 --
 -- Индексы сохранённых таблиц
 --
+
+--
+-- Индексы таблицы `admins`
+--
+ALTER TABLE `admins`
+  ADD PRIMARY KEY (`username`);
 
 --
 -- Индексы таблицы `catalogs`

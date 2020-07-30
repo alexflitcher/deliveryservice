@@ -61,7 +61,8 @@ class Link
     public function add($hash, $ip, $status)
     {
         try {
-
+            $query = "INSERT INTO links VALUES(NULL, :ip, :status)";
+            $fix = $this->pdo->prepare($query);
         } catch(PDOException $e) {
             die("Произошла ошибка: " . $e->getMessage());
         }
